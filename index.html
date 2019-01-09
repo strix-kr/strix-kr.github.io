@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Strix &middot; Strix</title>
 
-    <meta name="description" content="Demo site for a hugo theme">
+    <meta name="description" content="스트릭스 기술 블로그">
 
     <meta name="generator" content="Hugo 0.52" />
     <meta name="twitter:card" content="summary">
     
     <meta name="twitter:title" content="Strix &middot; Strix">
-    <meta name="twitter:description" content="Demo site for a hugo theme">
+    <meta name="twitter:description" content="스트릭스 기술 블로그">
 
     <meta property="og:type" content="article">
     <meta property="og:title" content="Strix &middot; Strix">
-    <meta property="og:description" content="Demo site for a hugo theme">
+    <meta property="og:description" content="스트릭스 기술 블로그">
 
     <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Oxygen:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
@@ -34,38 +34,20 @@
     <div class="header">
         <hgroup>
             <h1 class="brand-title"><a href="https://strix-kr.github.io">Strix</a></h1>
-            <h2 class="brand-tagline"> Demo site for a hugo theme </h2>
+            <h2 class="brand-tagline"> 스트릭스 기술 블로그 </h2>
         </hgroup>
 
         <nav class="nav">
             <ul class="nav-list">
                 
-                <li class="nav-item">
-                    <a class="pure-button" href="https://twitter.com/dragos_plesca">
-                        <i class="fa fa-twitter"></i> Twitter
-                    </a>
-                </li>
-                
                 
                 <li class="nav-item">
-                    <a class="pure-button" href="https://github.com/dplesca">
+                    <a class="pure-button" href="https://github.com/strix-kr">
                         <i class="fa fa-github-alt"></i> Github
                     </a>
                 </li>
                 
                 
-                <li class="nav-item">
-                    <a class="pure-button" href="https://stackoverflow.com/u/#######">
-                        <i class="fa fa-stack-overflow"></i>Stack Overflow
-                    </a>
-                </li>
-                
-                
-                <li class="nav-item">
-                    <a class="pure-button" href="https://www.linkedin.com/in/dragos-plesca-52797444">
-                        <i class="fa fa-linkedin"></i> LinkedIn
-                    </a>
-                </li>
                 
                 <li class="nav-item">
                     <a class="pure-button" href='https://strix-kr.github.io/index.xml'>
@@ -87,7 +69,7 @@
                 <section class="post">
                     <header class="post-header">
 
-                        <a href="https://strix-kr.github.io/posts/test1/" class="post-title">Test content</a>
+                        <a href="https://strix-kr.github.io/posts/2019/01/create-a-blog-with-hugo-on-github-io/" class="post-title">Hugo 로 github.io 블로그 만들기</a>
 
                         <p class="post-meta">
                             
@@ -96,7 +78,70 @@
                     </header>
 
                     <div class="post-description">
-                        <p>테스트 컨텐츠입니다.</p>
+                        
+
+<h1 id="1-준비">1. 준비</h1>
+
+<h2 id="1-1-저장소">1.1 저장소</h2>
+
+<ul>
+<li>github.com repo 2개
+
+<ul>
+<li>/blog : 블로그 관련 파일 관리용. 비공개</li>
+<li>/strix-kr.github.io : 실제 퍼블리싱 파일들 위치. 공개
+<br /></li>
+</ul></li>
+</ul>
+
+<h2 id="1-2-로컬-설정">1.2 로컬 설정</h2>
+
+<ul>
+<li>Hugo 설치
+
+<ul>
+<li>(mac) brew install hugo</li>
+</ul></li>
+<li>블로그 생성
+
+<ul>
+<li>hugo new site blog &amp;&amp; cd blog</li>
+</ul></li>
+<li>테마 설치
+
+<ul>
+<li>git clone <a href="https://github.com/dplesca/purehugo.git">https://github.com/dplesca/purehugo.git</a> themes/purehugo</li>
+</ul></li>
+<li>git 설정
+
+<ul>
+<li>git init</li>
+<li>git remote add origin git@github.com:strix-kr/blog.git</li>
+<li>git submodule add git@github.com:strix-kr/strix-kr.github.io.git public</li>
+</ul></li>
+</ul>
+
+<h1 id="2-글-생성-및-퍼블리싱">2. 글 생성 및 퍼블리싱</h1>
+
+<h2 id="2-1-글-생성">2.1 글 생성</h2>
+
+<pre><code>hugo new posts/test1.md
+</code></pre>
+
+<h2 id="2-2-draft-확인">2.2 draft 확인</h2>
+
+<pre><code>hugo server -D
+</code></pre>
+
+<h2 id="2-3-발행">2.3 발행</h2>
+
+<ul>
+<li>글 머릿말의 draft 항목을 false 로 변경</li>
+<li>자동 스크립트 실행
+<code>
+./deploy.sh '커밋 메세지'
+</code></li>
+</ul>
 
                     </div>
                 </section>
@@ -124,7 +169,7 @@
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-xxxxxx-xx', 'auto');
+ga('create', '', 'auto');
 ga('send', 'pageview');
 
 </script>

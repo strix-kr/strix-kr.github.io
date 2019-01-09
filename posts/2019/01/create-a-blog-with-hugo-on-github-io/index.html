@@ -106,28 +106,27 @@
 <h2 id="1-2-로컬-설정">1.2 로컬 설정</h2>
 
 <ul>
-<li>Hugo 설치
+<li><p>Hugo 설치</p>
 
-<ul>
-<li>(mac) brew install hugo</li>
-</ul></li>
-<li>블로그 생성
+<pre><code>(mac) brew install hugo
+</code></pre></li>
 
-<ul>
-<li>hugo new site blog &amp;&amp; cd blog</li>
-</ul></li>
-<li>테마 설치
+<li><p>블로그 생성</p>
 
-<ul>
-<li>git clone <a href="https://github.com/dplesca/purehugo.git">https://github.com/dplesca/purehugo.git</a> themes/purehugo</li>
-</ul></li>
-<li>git 설정
+<pre><code>hugo new site blog &amp;&amp; cd blog
+</code></pre></li>
 
-<ul>
-<li>git init</li>
-<li>git remote add origin git@github.com:strix-kr/blog.git</li>
-<li>git submodule add git@github.com:strix-kr/strix-kr.github.io.git public</li>
-</ul></li>
+<li><p>테마 설치</p>
+
+<pre><code>git clone https://github.com/dplesca/purehugo.git themes/purehugo
+</code></pre></li>
+
+<li><p>git 설정</p>
+
+<pre><code>git init
+git remote add origin git@github.com:strix-kr/blog.git
+git submodule add git@github.com:strix-kr/strix-kr.github.io.git public
+</code></pre></li>
 </ul>
 
 <h1 id="2-글-생성-및-퍼블리싱">2. 글 생성 및 퍼블리싱</h1>
@@ -146,11 +145,11 @@
 
 <ul>
 <li>글 머릿말의 draft 항목을 false 로 변경</li>
-<li>자동 스크립트 실행
-<code>
-./deploy.sh '커밋 메세지'
-</code></li>
+<li>자동 스크립트 실행</li>
 </ul>
+
+<pre><code>./deploy.sh '커밋 메세지'
+</code></pre>
 
                     </div>
                     

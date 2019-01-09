@@ -151,6 +151,38 @@ git submodule add git@github.com:strix-kr/strix-kr.github.io.git public
 <pre><code>./deploy.sh '커밋 메세지'
 </code></pre>
 
+<h1 id="3-다중-저자">3. 다중 저자</h1>
+
+<h2 id="3-1-로컬-설정">3.1 로컬 설정</h2>
+
+<p>(신규 유저의 경우)</p>
+
+<pre><code>git clone git@github.com:strix-kr/blog.git &amp;&amp; cd blog
+git submodule add git@github.com:strix-kr/strix-kr.github.io.git public
+</code></pre>
+
+<p>이후 동일</p>
+
+<h1 id="4-테마-변경">4. 테마 변경</h1>
+
+<h2 id="4-1-테마를-subtree-로-지정">4.1 테마를 subtree 로 지정</h2>
+
+<ul>
+<li><p>원하는 테마의 저장소를 fork 한다.</p>
+
+<pre><code>rm -rf themes/purehugo
+git remote add purehugo git@github.com:strix-kr/purehugo.git
+git remote add beautifulhugoUpstream git@github.com:dplesca/purehugo.git
+git subtree add --prefix=themes/purehugo purehugo master
+</code></pre></li>
+
+<li><p>subtree pull / push</p>
+
+<pre><code>git subtree pull --prefix=themes/purehugo purehugo master
+git subtree push --prefix=themes/purehugo purehugo master
+</code></pre></li>
+</ul>
+
                     </div>
                     
                 </section>

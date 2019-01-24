@@ -1,93 +1,75 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hugo 로 github.io 블로그 만들기 &middot; Strix</title>
+    <title>Hugo 로 github.io 블로그 만들기 // </title>
 
+        <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+        <meta property="og:title" content="Hugo 로 github.io 블로그 만들기" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="/posts/2019/01/create-a-blog-with-hugo-on-github-io/" />
+    
+
+    <link href="" rel="alternate" type="application/rss+xml" title="" />
+    <link rel="shortcut icon" href="/favicon.png">
+
+    <link href="webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
+    <link href="webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="css/style.css">
 
     <meta name="generator" content="Hugo 0.52" />
-    <meta name="twitter:card" content="summary">
-    
-    <meta name="twitter:title" content="Hugo 로 github.io 블로그 만들기 &middot; Strix">
-    <meta name="twitter:description" content="">
-
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="Hugo 로 github.io 블로그 만들기 &middot; Strix">
-    <meta property="og:description" content="">
-
-    <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Oxygen:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
-
-    <link rel="stylesheet" href='https://strix-kr.github.io/css/all.min.css'>
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-
-    <link rel="alternate" type="application/rss+xml" title="Strix" href='https://strix-kr.github.io/index.xml' />
 </head>
+
+
 <body>
-
-
-<div id="layout" class="pure-g">
-    <div class="sidebar pure-u-1 pure-u-md-1-4">
-    <div class="header">
-        <hgroup>
-            <h1 class="brand-title"><a href="https://strix-kr.github.io">Strix</a></h1>
-            <h2 class="brand-tagline"> 스트릭스 기술 블로그 </h2>
-        </hgroup>
-
-        <nav class="nav">
-            <ul class="nav-list">
+<div id="container">
+    <header id="header">
+    <div id="header-outer" class="outer">
+        <div id="header-inner" class="inner">
+            <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
+            <a id="logo" class="logo-text" href=""></a>
+            <nav id="main-nav">
                 
+                <a class="main-nav-link" href="/">Blog</a>
                 
-                <li class="nav-item">
-                    <a class="pure-button" href="https://github.com/strix-kr">
-                        <i class="fa fa-github-alt"></i> Github
-                    </a>
-                </li>
+                <a class="main-nav-link" href="category/">Categories</a>
                 
+                <a class="main-nav-link" href="tags/">Tags</a>
                 
-                
-                <li class="nav-item">
-                    <a class="pure-button" href='https://strix-kr.github.io/index.xml'>
-                        <i class="fa fa-rss"></i> rss
-                    </a>
-                </li>
-            </ul>
-        </nav>
+            </nav>
+            <nav id="sub-nav">
+                <div id="search-form-wrap">
+                </div>
+            </nav>
+        </div>
     </div>
-</div>
+</header>
 
-
-    <div class="content pure-u-1 pure-u-md-3-4">
-        <div>
+    <section id="main" class="outer">
+        <article class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        <header class="article-header">
+            <h1 class="article-title" itemprop="name">Hugo 로 github.io 블로그 만들기</h1>
+        </header>
+        
+        <div class="article-meta">
+            <a href="/posts/2019/01/create-a-blog-with-hugo-on-github-io/" class="article-date">
+                <time datetime='2019-01-09T14:35:13.000&#43;09:00' itemprop="datePublished">2019-01-09</time>
+            </a>
             
-            <div class="posts">
-                <h1 class="content-subhead">09 Jan 2019, 14:35</h1>
-                <section class="post">
-                    <header class="post-header">
-
-                        <a href="https://strix-kr.github.io/posts/2019/01/create-a-blog-with-hugo-on-github-io/" class="post-title">Hugo 로 github.io 블로그 만들기</a>
-
-                        <p class="post-meta">
-                            
-                            
-                        </p>
-                    </header>
-                    
-                    <div class="post-share">
-                        <div class="post-share-links">
-                            <h4 style="">Share</h4>
-                            
-                            
-                            
-                            
-                        </div>
-                    </div>
-                    
-                    <div class="post-description">
-                        
+            
+            
+        </div>
+        <div class="article-entry" itemprop="articleBody">
+            
 
 <h1 id="1-준비">1. 준비</h1>
 
@@ -183,34 +165,118 @@ git subtree push --prefix=themes/purehugo purehugo master
 </code></pre></li>
 </ul>
 
-                    </div>
-                    
-                </section>
-            </div>
-            <div class="footer">
-    <div class="pure-menu pure-menu-horizontal pure-menu-open">
-        <ul>
-            <li>Powered by <a class="hugo" href="https://gohugo.io/" target="_blank">hugo</a></li>
-        </ul>
-    </div>
-</div>
-<script src='https://strix-kr.github.io/js/all.min.js'></script>
+        </div>
 
+        
+        
+        <div class="article-toc" style="display:none;">
+            <h3>Contents</h3>
+            <nav id="TableOfContents">
+<ul>
+<li><a href="#1-준비">1. 준비</a>
+<ul>
+<li><a href="#1-1-저장소">1.1 저장소</a></li>
+<li><a href="#1-2-로컬-설정">1.2 로컬 설정</a></li>
+</ul></li>
+<li><a href="#2-글-생성-및-퍼블리싱">2. 글 생성 및 퍼블리싱</a>
+<ul>
+<li><a href="#2-1-글-생성">2.1 글 생성</a></li>
+<li><a href="#2-2-draft-확인">2.2 draft 확인</a></li>
+<li><a href="#2-3-발행">2.3 발행</a></li>
+</ul></li>
+<li><a href="#3-다중-저자">3. 다중 저자</a>
+<ul>
+<li><a href="#3-1-로컬-설정">3.1 로컬 설정</a></li>
+</ul></li>
+<li><a href="#4-테마-변경">4. 테마 변경</a>
+<ul>
+<li><a href="#4-1-테마를-subtree-로-지정">4.1 테마를 subtree 로 지정</a></li>
+</ul></li>
+</ul>
+</nav>
+        </div>
+        
+        
+
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
+        <script>
+            (function() {
+                var $toc = $('#TableOfContents');
+                if ($toc.length > 0) {
+                    var $window = $(window);
+
+                    function onScroll(){
+                        var currentScroll = $window.scrollTop();
+                        var h = $('.article-entry h1, .article-entry h2, .article-entry h3, .article-entry h4, .article-entry h5, .article-entry h6');
+                        var id = "";
+                        h.each(function (i, e) {
+                            e = $(e);
+                            if (e.offset().top - 10 <= currentScroll) {
+                                id = e.attr('id');
+                            }
+                        });
+                        var active = $toc.find('a.active');
+                        if (active.length == 1 && active.eq(0).attr('href') == '#' + id) return true;
+
+                        active.each(function (i, e) {
+                            $(e).removeClass('active').siblings('ul').hide();
+                        });
+                        $toc.find('a[href="#' + id + '"]').parentsUntil('#TableOfContents').each(function (i, e) {
+                            $(e).children('a').addClass('active').siblings('ul').show();
+                        });
+                    }
+
+                    $window.on('scroll', onScroll);
+                    $(document).ready(function() {
+                        $toc.find('a').parent('li').find('ul').hide();
+                        onScroll();
+                        document.getElementsByClassName('article-toc')[0].style.display = '';
+                    });
+                }
+            })();
+        </script>
+        
+
+
+        
+    </div>
+    <nav id="article-nav">
+    
+    
+</nav>
+
+</article>
+
+        
+    </section>
+    <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2019 Strix
+            <br />
+            Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with theme <a href="https://github.com/carsonip/hugo-theme-minos" target="_blank">Minos</a>
         </div>
     </div>
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/tomorrow-night.min.css" integrity="sha256-2wL88NKUqvJi/ExflDzkzUumjUM73mcK2gBvBBeLvTk=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js" integrity="sha256-KbfTjB0WZ8vvXngdpJGY3Yp3xKk+tttbqClO11anCIU=" crossorigin="anonymous"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    <script>
+        document.getElementById('main-nav-toggle').addEventListener('click', function () {
+            var header = document.getElementById('header');
+            if (header.classList.contains('mobile-on')) {
+                header.classList.remove('mobile-on');
+            } else {
+                header.classList.add('mobile-on');
+            }
+        });
+    </script>
+</footer>
+
 </div>
-
-
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-ga('create', '', 'auto');
-ga('send', 'pageview');
-
-</script>
-
 </body>
 </html>

@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on </title>
-    <link>/posts/</link>
+    <link>https://strix-kr.github.io/posts/</link>
     <description>Recent content in Posts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 09 Jan 2019 14:35:13 +0900</lastBuildDate>
     
-	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://strix-kr.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hugo 로 github.io 블로그 만들기</title>
-      <link>/posts/2019/01/create-a-blog-with-hugo-on-github-io/</link>
+      <link>https://strix-kr.github.io/posts/2019/01/create-a-blog-with-hugo-on-github-io/</link>
       <pubDate>Wed, 09 Jan 2019 14:35:13 +0900</pubDate>
       
-      <guid>/posts/2019/01/create-a-blog-with-hugo-on-github-io/</guid>
+      <guid>https://strix-kr.github.io/posts/2019/01/create-a-blog-with-hugo-on-github-io/</guid>
       <description>1. 준비 1.1 저장소  github.com repo 2개  /blog : 블로그 관련 파일 관리용. 비공개 /strix-kr.github.io : 실제 퍼블리싱 파일들 위치. 공개    1.2 로컬 설정  Hugo 설치
 (mac) brew install hugo  블로그 생성
 hugo new site blog &amp;amp;&amp;amp; cd blog  테마 설치

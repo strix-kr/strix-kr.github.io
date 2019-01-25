@@ -37,12 +37,6 @@
             <a id="logo" class="logo-text" href=""></a>
             <nav id="main-nav">
                 
-                <a class="main-nav-link" href="/">Blog</a>
-                
-                <a class="main-nav-link" href="category/">Categories</a>
-                
-                <a class="main-nav-link" href="tags/">Tags</a>
-                
             </nav>
             <nav id="sub-nav">
                 <div id="search-form-wrap">
@@ -169,7 +163,7 @@ git subtree push --prefix=themes/purehugo purehugo master
 
         
         
-        <div class="article-toc" style="display:none;">
+        <div class="article-toc" >
             <h3>Contents</h3>
             <nav id="TableOfContents">
 <ul>
@@ -199,44 +193,6 @@ git subtree push --prefix=themes/purehugo purehugo master
         
 
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
-        <script>
-            (function() {
-                var $toc = $('#TableOfContents');
-                if ($toc.length > 0) {
-                    var $window = $(window);
-
-                    function onScroll(){
-                        var currentScroll = $window.scrollTop();
-                        var h = $('.article-entry h1, .article-entry h2, .article-entry h3, .article-entry h4, .article-entry h5, .article-entry h6');
-                        var id = "";
-                        h.each(function (i, e) {
-                            e = $(e);
-                            if (e.offset().top - 10 <= currentScroll) {
-                                id = e.attr('id');
-                            }
-                        });
-                        var active = $toc.find('a.active');
-                        if (active.length == 1 && active.eq(0).attr('href') == '#' + id) return true;
-
-                        active.each(function (i, e) {
-                            $(e).removeClass('active').siblings('ul').hide();
-                        });
-                        $toc.find('a[href="#' + id + '"]').parentsUntil('#TableOfContents').each(function (i, e) {
-                            $(e).children('a').addClass('active').siblings('ul').show();
-                        });
-                    }
-
-                    $window.on('scroll', onScroll);
-                    $(document).ready(function() {
-                        $toc.find('a').parent('li').find('ul').hide();
-                        onScroll();
-                        document.getElementsByClassName('article-toc')[0].style.display = '';
-                    });
-                }
-            })();
-        </script>
-        
 
 
         
@@ -253,7 +209,7 @@ git subtree push --prefix=themes/purehugo purehugo master
     <footer id="footer">
     <div class="outer">
         <div id="footer-info" class="inner">
-            &copy; 2019 Strix
+            &copy; 2019 Carson Ip
             <br />
             Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with theme <a href="https://github.com/carsonip/hugo-theme-minos" target="_blank">Minos</a>
         </div>

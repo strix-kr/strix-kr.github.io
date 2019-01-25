@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on </title>
+    <title>Posts on Hello, Strix!</title>
     <link>https://strix-kr.github.io/posts/</link>
-    <description>Recent content in Posts on </description>
+    <description>Recent content in Posts on Hello, Strix!</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 09 Jan 2019 14:35:13 +0900</lastBuildDate>
     
@@ -16,11 +16,7 @@
       <pubDate>Wed, 09 Jan 2019 14:35:13 +0900</pubDate>
       
       <guid>https://strix-kr.github.io/posts/2019/01/create-a-blog-with-hugo-on-github-io/</guid>
-      <description>1. 준비 1.1 저장소  github.com repo 2개  /blog : 블로그 관련 파일 관리용. 비공개 /strix-kr.github.io : 실제 퍼블리싱 파일들 위치. 공개    1.2 로컬 설정  Hugo 설치
-(mac) brew install hugo  블로그 생성
-hugo new site blog &amp;amp;&amp;amp; cd blog  테마 설치
-git clone https://github.com/dplesca/purehugo.git themes/purehugo  git 설정
-git init git remote add origin git@github.com:strix-kr/blog.git git submodule add git@github.com:strix-kr/strix-kr.github.io.git public   2.</description>
+      <description>1. 준비 1.1 저장소 github.com repo 2개 /blog : 블로그 관련 파일 관리용. 비공개 /strix-kr.github.io : 실제 퍼블리싱 파일들 위치. 공개 1.2 로컬 설정 Hugo 설치 (mac) brew install hugo 블로그 생성 hugo new site blog &amp;amp;&amp;amp; cd blog 테마 설치 git clone https://github.com/dplesca/purehugo.git themes/purehugo git 설정 git init git remote add origin git@github.com:strix-kr/blog.git git submodule add git@github.com:strix-kr/strix-kr.github.io.git public 2. 글 생성 및 퍼블리싱 2.1</description>
     </item>
     
   </channel>

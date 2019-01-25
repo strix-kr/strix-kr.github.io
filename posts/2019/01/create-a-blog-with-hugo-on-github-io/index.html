@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hugo 로 github.io 블로그 만들기 // </title>
+    <title>Hugo 로 github.io 블로그 만들기 // Hello, Strix!</title>
 
         <meta charset="utf-8">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="A simple and retro styled theme ported from Hexo">
     <meta name="keywords" content="">
     <meta name="author" content="">
         <meta property="og:title" content="Hugo 로 github.io 블로그 만들기" />
-    <meta property="og:description" content="" />
+    <meta property="og:description" content="A simple and retro styled theme ported from Hexo" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:url" content="https://strix-kr.github.io/posts/2019/01/create-a-blog-with-hugo-on-github-io/" />
     
 
-    <link href="" rel="alternate" type="application/rss+xml" title="" />
+    <link href="" rel="alternate" type="application/rss+xml" title="Hello, Strix!" />
     <link rel="shortcut icon" href="/favicon.png">
 
     <link href="https://strix-kr.github.io/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
@@ -24,7 +24,7 @@
 
     <link rel="stylesheet" href="https://strix-kr.github.io/css/style.css">
 
-    <meta name="generator" content="Hugo 0.52" />
+    <meta name="generator" content="Hugo 0.53" />
 </head>
 
 
@@ -34,8 +34,12 @@
     <div id="header-outer" class="outer">
         <div id="header-inner" class="inner">
             <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
-            <a id="logo" class="logo-text" href="https://strix-kr.github.io"></a>
+            <a id="logo" class="logo-text" href="https://strix-kr.github.io">Hello, Strix!</a>
             <nav id="main-nav">
+                
+                <a class="main-nav-link" href="/posts/">Archives</a>
+                
+                <a class="main-nav-link" href="/categories/">Categories</a>
                 
             </nav>
             <nav id="sub-nav">
@@ -163,7 +167,7 @@ git subtree push --prefix=themes/purehugo purehugo master
 
         
         
-        <div class="article-toc" >
+        <div class="article-toc" style="display:none;">
             <h3>Contents</h3>
             <nav id="TableOfContents">
 <ul>
@@ -193,6 +197,44 @@ git subtree push --prefix=themes/purehugo purehugo master
         
 
         
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
+        <script>
+            (function() {
+                var $toc = $('#TableOfContents');
+                if ($toc.length > 0) {
+                    var $window = $(window);
+
+                    function onScroll(){
+                        var currentScroll = $window.scrollTop();
+                        var h = $('.article-entry h1, .article-entry h2, .article-entry h3, .article-entry h4, .article-entry h5, .article-entry h6');
+                        var id = "";
+                        h.each(function (i, e) {
+                            e = $(e);
+                            if (e.offset().top - 10 <= currentScroll) {
+                                id = e.attr('id');
+                            }
+                        });
+                        var active = $toc.find('a.active');
+                        if (active.length == 1 && active.eq(0).attr('href') == '#' + id) return true;
+
+                        active.each(function (i, e) {
+                            $(e).removeClass('active').siblings('ul').hide();
+                        });
+                        $toc.find('a[href="#' + id + '"]').parentsUntil('#TableOfContents').each(function (i, e) {
+                            $(e).children('a').addClass('active').siblings('ul').show();
+                        });
+                    }
+
+                    $window.on('scroll', onScroll);
+                    $(document).ready(function() {
+                        $toc.find('a').parent('li').find('ul').hide();
+                        onScroll();
+                        document.getElementsByClassName('article-toc')[0].style.display = '';
+                    });
+                }
+            })();
+        </script>
+        
 
 
         
@@ -209,7 +251,7 @@ git subtree push --prefix=themes/purehugo purehugo master
     <footer id="footer">
     <div class="outer">
         <div id="footer-info" class="inner">
-            &copy; 2019 Carson Ip
+            &copy; 2019 Hello, Strix!
             <br />
             Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with theme <a href="https://github.com/carsonip/hugo-theme-minos" target="_blank">Minos</a>
         </div>
